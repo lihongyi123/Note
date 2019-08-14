@@ -337,6 +337,8 @@ ste6$c = as.factor(ste6$c)
 ```{r}
 # 统一列名，并合并
 colnames(ste6) = colnames(ann_all2)
+ann_all2$ring=as.character(ann_all2$ring)
+ste6$ring=as.character(ste6$ring)
 ann_all3 = rbind(ann_all2,ste6)
 head(ann_all3)
 # 保存文件
